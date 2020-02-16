@@ -242,16 +242,35 @@ man 5 passwd
 ## Question 17
 On utilisera ici la commande sort :
 ```
-sort  
+cut -c1 /etc/passwd | sort -r
 ```
 
 ## Question 18 
 On utilisera la commande : 
 ```
-less /etc/passwd
+getent passwd | wc -l
 ```
 ## Question 19 
 
+## Question 20
+Pour trouver tous les fichiers contenant le mot passwd, on utilisera :
+```
+find -name "passwd"
+```
+## Question 21
+
+```
+find -name "passwd" > list_passwd_files.txt 2>/dev/null
+```
+
+## Question 23
+On localisera le fichier history.log avec la commande suivante : 
+```
+sudo apt install mlocate  
+locate history.log
+```
+## Question 24
+Non, locate ne trouve pas le fichier
 
 ## Exercice 3 
 ## Question 1 
